@@ -1,7 +1,7 @@
 # FocusAccount
 [Site deployement](https://focus-site-umber.vercel.app/)
 
-> An accountability-driven focus tracker. Plan your day visually, track real work sessions, and measure how closely reality matched your intentions.
+An accountability-driven focus tracker. Plan your day visually, track real work sessions, and measure how closely reality matched your intentions.
 
 ![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite&logoColor=white)
