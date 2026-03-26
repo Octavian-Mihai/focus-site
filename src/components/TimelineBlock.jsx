@@ -12,7 +12,7 @@ const TYPE_COLORS = {
 export default function TimelineBlock({ block, onEdit }) {
   const deleteBlock = usePlanStore((s) => s.deleteBlock);
   const top = minutesToPx(block.startTime);
-  const height = Math.max(minutesToPx(block.endTime - block.startTime), 22);
+  const height = Math.max(minutesToPx(block.endTime - block.startTime), 3);
   const colorClass = TYPE_COLORS[block.type] || TYPE_COLORS.other;
 
   return (
