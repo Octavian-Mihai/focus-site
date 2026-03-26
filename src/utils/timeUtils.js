@@ -1,7 +1,6 @@
 export const MINUTES_IN_DAY = 1440;
 export const SNAP_MINUTES = 5;
-export const TIMELINE_HEIGHT_PX = 2880;
-
+export const TIMELINE_HEIGHT_PX = 1440 * 3; 
 export function minutesToPx(minutes) {
   return (minutes / MINUTES_IN_DAY) * TIMELINE_HEIGHT_PX;
 }
