@@ -93,7 +93,7 @@ export default function SessionBlock({ session }) {
   const startMins = startDate.getHours() * 60 + startDate.getMinutes();
   const endMins = endDate.getHours() * 60 + endDate.getMinutes();
   const top = minutesToPx(startMins);
-  const height = Math.max(minutesToPx(endMins - startMins), 16);
+  const height = Math.max(minutesToPx(endMins - startMins), 3);
 
   return (
     <>
