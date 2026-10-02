@@ -13,7 +13,7 @@ An accountability-driven focus tracker. Plan your day visually, track real work 
 
 ## Screenshots
 
-![Daily planner and focus timer](docs/screenshots/focus.png)
+![Day timeline with planned blocks vs actual sessions, plus focus timer and 90-day heatmap (sample data)](docs/screenshots/focus.png)
 
 ## Architecture
 
