@@ -1,4 +1,6 @@
 # FocusAccount
+
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for an architecture diagram.
 [Site deployement](https://focus-site-umber.vercel.app/)
 
 An accountability-driven focus tracker. Plan your day visually, track real work sessions, and measure how closely reality matched your intentions.
