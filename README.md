@@ -11,6 +11,10 @@ An accountability-driven focus tracker. Plan your day visually, track real work 
 ---
 
 
+## Screenshots
+
+![Daily planner and focus timer](docs/screenshots/focus.png)
+
 ## Architecture
 
 ```mermaid
