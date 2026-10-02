@@ -1,6 +1,4 @@
 # FocusAccount
-
-See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for an architecture diagram.
 [Site deployement](https://focus-site-umber.vercel.app/)
 
 An accountability-driven focus tracker. Plan your day visually, track real work sessions, and measure how closely reality matched your intentions.
@@ -11,6 +9,48 @@ An accountability-driven focus tracker. Plan your day visually, track real work 
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
 ---
+
+
+## Architecture
+
+```mermaid
+flowchart TD
+    Main[main.jsx] --> App[App.jsx] --> Planner[pages/PlannerPage]
+
+    subgraph UI["components/"]
+        TL[Timeline · TimelineBlock · CurrentTimeIndicator]
+        BE[BlockEditor]
+        TW[TimerWidget]
+        FM[FocusMode]
+        Dash[Dashboard · Heatmap]
+        SB[SessionBlock]
+    end
+
+    subgraph Stores["stores/"]
+        Plan[usePlanStore]
+        Sess[useSessionStore]
+        Timer[useTimerStore]
+        Stats[useStatsStore]
+    end
+
+    subgraph Logic
+        Hooks["hooks/<br/>useTimer · useDragBlock · useLocalPersist"]
+        Utils["utils/<br/>timeUtils · scoreUtils · metricsUtils"]
+        Models["models/<br/>PlanBlock · Session · DailyStats"]
+    end
+
+    LS[(localStorage)]
+
+    Planner --> UI
+    UI --> Stores
+    Hooks --> Stores
+    Stores --> Utils --> Models
+    Stats --> Dash
+    Stores <--> Hooks
+    Hooks --> LS
+```
+
+More detail: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ## Overview
 
